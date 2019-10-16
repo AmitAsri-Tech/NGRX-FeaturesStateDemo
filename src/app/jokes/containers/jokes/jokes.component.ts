@@ -15,24 +15,24 @@ export class JokesComponent implements OnInit {
   error$: Observable<any>;
   isLoading$: Observable<boolean>;
 
-  constructor(private store$: Store<RootStoreState.State>) { }
+  constructor(private store: Store<RootStoreState.State>) { }
 
   ngOnInit() {
-    this.jokes$ = this.store$.pipe(
+    this.jokes$ = this.store.pipe(
       select(JokeStoreSelectors.selectAllJokeItems)
     );
 
-    this.error$ = this.store$.pipe(
+    this.error$ = this.store.pipe(
       select(JokeStoreSelectors.selectJokeError)
     );
 
-    this.isLoading$ = this.store$.pipe(
+    this.isLoading$ = this.store.pipe(
       select(JokeStoreSelectors.selectJokeIsLoading)
     );
   }
 
   onRefresh() {
-    this.store$.dispatch(
+    this.store.dispatch(
       new JokeStoreActions.LoadRequestAction()
     );
   }
