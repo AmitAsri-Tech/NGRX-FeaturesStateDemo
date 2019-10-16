@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
-import { JokeStoreEffects } from './effects';
-import { featureReducer } from './reducer';
+import { JokeStoreEffects } from './effects/effects';
+import { featureReducer } from './reducers/reducer';
 
 @NgModule({
   imports: [

@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-
-import { JokeStoreModule } from './joke-store';
+import { JokeStoreModule } from './store/joke-store.module';
 
 @NgModule({
   imports: [
@@ -18,4 +17,4 @@ import { JokeStoreModule } from './joke-store';
   ],
   declarations: []
 })
-export class RootStoreModule {}
+export class JokeRootModule {}

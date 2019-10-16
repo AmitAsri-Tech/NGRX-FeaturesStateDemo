@@ -1,7 +1,8 @@
-import { Actions, ActionTypes } from './actions';
-import { featureAdapter, initialState, State } from './state';
 
-export function featureReducer(state = initialState, action: Actions): State {
+import { featureAdapter, initialState, State } from '../state/state';
+import { ActionTypes, ActionTypeUnions } from '../actions/actions';
+
+export function featureReducer(state = initialState, action: ActionTypeUnions): State {
   switch (action.type) {
     case ActionTypes.LOAD_REQUEST: {
       return {

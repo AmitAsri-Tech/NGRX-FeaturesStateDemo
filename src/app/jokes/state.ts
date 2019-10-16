@@ -1,4 +1,4 @@
-import { JokeStoreState } from './joke-store';
+import { JokeStoreState } from './store';
 
 export interface State {
   joke: JokeStoreState.State;

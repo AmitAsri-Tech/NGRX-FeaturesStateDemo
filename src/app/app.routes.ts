@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { JokeDetailComponent } from './containers/joke-detail/joke-detail.component';
-import { JokesComponent } from './containers/jokes/jokes.component';
+import { JokesComponent } from './jokes/containers/jokes/jokes.component';
+import { JokeDetailComponent } from './jokes/containers/joke-detail/joke-detail.component';
 
 export const routes: Routes = [{
   path: '',

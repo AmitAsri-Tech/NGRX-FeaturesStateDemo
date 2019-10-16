@@ -7,11 +7,12 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { routes } from './app.routes';
-import { JokeCardItemComponent } from './components/joke-card-item/joke-card-item.component';
-import { JokeCardListComponent } from './components/joke-card-list/joke-card-list.component';
-import { JokeDetailComponent } from './containers/joke-detail/joke-detail.component';
-import { JokesComponent } from './containers/jokes/jokes.component';
-import { RootStoreModule } from './root-store';
+
+import { JokeRootModule } from './jokes/joke-root.module';
+import { JokesComponent } from './jokes/containers/jokes/jokes.component';
+import { JokeDetailComponent } from './jokes/containers/joke-detail/joke-detail.component';
+import { JokeCardListComponent } from './jokes/components/joke-card-list/joke-card-list.component';
+import { JokeCardItemComponent } from './jokes/components/joke-card-item/joke-card-item.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,7 @@ import { RootStoreModule } from './root-store';
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    RootStoreModule,
+    JokeRootModule,
     AppRoutingModule,
     MatCardModule,
     MatProgressBarModule,

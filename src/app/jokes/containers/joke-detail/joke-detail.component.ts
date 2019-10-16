@@ -3,7 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { Joke } from '../../models';
-import { JokeStoreSelectors, RootStoreState } from '../../root-store';
+import { RootStoreState } from '../..';
+import { JokeStoreSelectors } from '../../store';
 
 @Component({
   selector: 'app-joke-detail',

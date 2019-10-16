@@ -4,7 +4,7 @@ import { Action } from '@ngrx/store';
 import { Observable, of as observableOf } from 'rxjs';
 import { catchError, map, startWith, switchMap } from 'rxjs/operators';
 import { DataService } from '../../services/data.service';
-import * as featureActions from './actions';
+import * as featureActions from '../actions/actions';
 
 @Injectable()
 export class JokeStoreEffects {

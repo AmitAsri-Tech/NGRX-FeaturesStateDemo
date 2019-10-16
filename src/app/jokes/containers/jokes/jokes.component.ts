@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { Joke } from '../../models';
-import { JokeStoreActions, JokeStoreSelectors, RootStoreState } from '../../root-store';
+import { RootStoreState, JokeStoreSelectors, JokeStoreActions } from '../..';
+
 
 @Component({
   selector: 'app-jokes',

@@ -21,4 +21,4 @@ export class LoadSuccessAction implements Action {
   constructor(public payload: { items: Joke[] }) {}
 }
 
-export type Actions = LoadRequestAction | LoadFailureAction | LoadSuccessAction;
+export type ActionTypeUnions = LoadRequestAction | LoadFailureAction | LoadSuccessAction;
