@@ -1,7 +1,7 @@
 <div><a routerLink="/jokes"><< Back to List</a></div>
 <br />
 <div *ngIf="joke$ | async as joke; else loading">
-  <mat-card>
+  <mat-card [style.backgroundColor]="'#ffd740'">
     <mat-card-title>Joke #{{ joke.id }}</mat-card-title>
     <mat-card-content>
       <p>{{ joke.joke }}</p>
