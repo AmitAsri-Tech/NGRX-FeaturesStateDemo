@@ -8,7 +8,6 @@ import { Joke } from '../../models';
 })
 export class JokeCardItemComponent implements OnInit {
   @Input() joke: Joke;
-  @Output() select = new EventEmitter<number>();
 
   constructor() { }
 
