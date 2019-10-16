@@ -10,7 +10,6 @@ export const featureAdapter: EntityAdapter<Joke> = createEntityAdapter<Joke>({
 export interface State extends EntityState<Joke> {
   isLoading?: boolean;
   error?: any;
-  selectedJokeId: number;
 }
 
 export const initialState: State = featureAdapter.getInitialState(
