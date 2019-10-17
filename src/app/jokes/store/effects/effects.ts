@@ -11,12 +11,6 @@ export class JokeStoreEffects {
   constructor(private dataService: DataService, private actions$: Actions) { }
 
   @Effect()
-  initEffect$: Observable<Action> = this.actions$.pipe(
-    ofType(ROOT_EFFECTS_INIT),
-    map(_ => new featureActions.LoadRequestAction())
-  );
-
-  @Effect()
   loadRequestEffect$: Observable<Action> = this.actions$.pipe(
     ofType<featureActions.LoadRequestAction>(
       featureActions.ActionTypes.LOAD_REQUEST
