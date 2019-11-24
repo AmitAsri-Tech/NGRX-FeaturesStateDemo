@@ -1,10 +1,11 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ChangeDetectionStrategy } from '@angular/core';
 import { Joke } from '../../models';
 
 @Component({
   selector: 'app-joke-card-list',
   templateUrl: './joke-card-list.component.html',
-  styleUrls: ['./joke-card-list.component.css']
+  styleUrls: ['./joke-card-list.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class JokeCardListComponent implements OnInit {
 
